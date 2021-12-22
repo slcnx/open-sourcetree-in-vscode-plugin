@@ -3,6 +3,57 @@
   "version": "0.0.3",
   "description": "WIP - nothing to see here",
   "main": "index.js",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.sourcetree"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sourcetree",
+        "title": "open in sourcetree"
+      }
+    ],
+    "menus": {
+      "notebook/toolbar": [
+        {
+          "command": "extension.sourcetree",
+          "group": "navigation"
+        }
+      ],
+      "scm/title": [
+        {
+          "command": "extension.sourcetree",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "extension.sourcetree",
+          "group": "1_diff"
+        }
+      ],
+      "file/newFile": [
+        {
+          "command": "extension.sourcetree",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "extension.sourcetree",
+          "group": "1_diff"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "extension.sourcetree"
+        }
+      ]
+    }
+  },
   "scripts": {
     "prepare": "echo prepare && npm run build",
     "prebuild": "npm run clean ",
@@ -34,5 +85,9 @@
   "bugs": {
     "url": "https://github.com/slcnx/open-sourcetree-in-vscode-plugin/issues"
   },
-  "homepage": "https://github.com/slcnx/open-sourcetree-in-vscode-plugin"
+  "homepage": "https://github.com/slcnx/open-sourcetree-in-vscode-plugin",
+  "dependencies": {
+    "@types/vscode": "^1.32.0",
+    "open": "^8.4.0"
+  }
 }
