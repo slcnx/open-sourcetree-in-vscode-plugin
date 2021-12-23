@@ -31,9 +31,9 @@ jobs:
     - run: npm test
     - run: git config --global user.email "${{ env.email }}"
     - run: git config --global user.name " ${{ github.actor }}"
-    - run: git add . && git commit -m 'version prepare'
+    # - run: git add . && git commit -m 'version prepare'
     - name: npm version && npm publish
-      if: always()
+      # if: always()
       uses: bcomnes/npm-bump@v2.0.2
       with:
         git_email: ${{ env.email }}
