@@ -76,7 +76,8 @@
     "npm-run-all2": "^5.0.2",
     "ovsx": "^0.2.1",
     "rimraf": "^3.0.2",
-    "standard": "^16.0.4"
+    "standard": "^16.0.4",
+    "vscode": "^1.1.37"
   },
   "repository": {
     "type": "git",
@@ -89,7 +90,6 @@
   },
   "homepage": "https://github.com/slcnx/open-sourcetree-in-vscode-plugin",
   "dependencies": {
-    "open": "^8.4.0",
-    "vscode": "^1.1.37"
+    "open": "^8.4.0"
   }
 }
