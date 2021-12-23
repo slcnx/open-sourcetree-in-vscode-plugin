@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.32.0"
   },
+  "publisher": "songliangcheng",
   "activationEvents": [
     "onCommand:extension.sourcetree"
   ],
@@ -73,6 +74,7 @@
     "dependency-check": "^4.1.0",
     "gh-release": "^6.0.1",
     "npm-run-all2": "^5.0.2",
+    "ovsx": "^0.2.1",
     "rimraf": "^3.0.2",
     "standard": "^16.0.4"
   },
