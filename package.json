@@ -1,6 +1,6 @@
 {
   "name": "open-sourcetree-in-vscode-plugin",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "WIP - nothing to see here",
   "main": "index.js",
   "engines": {
