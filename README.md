@@ -1,64 +1,22 @@
 # open-sourcetree-in-vscode-plugin
 
-WIP - nothing to see here
+在vscode中的资源管理器中，直接右键可以打开sourcetree, 并加载当前git源码树到sourcetree
 
-```
-npm install open-sourcetree-in-vscode-plugin
-```
+# 使用方法
+先定位sourcetree的安装目录
 
-## Usage
+![image-20211223181201065](README/image-20211223181201065.png)
 
-``` js
-const open-sourcetree-in-vscode-plugin = require('open-sourcetree-in-vscode-plugin')
-```
-
-## Continues Integration
-
-```bash
-npm install # 自动prepare -> npm run build，build前会清理，之后构建。
-npm test    # npm测试
-npm version {major|minor|patch}   # 自动管理package.json的 major.minor.patch 版本, 串行进行: 以及基于commit生成CHANGLOG, 基于commit发布release.
-npm publish  # 发布当前npm为open-sourcetree-in-vscode-plugin
-```
-
-## github配置
-
-`secrets.NPM_TOKEN`
-`.github\workflows\release.yml`
-`secrets.OPEN_VSX_TOKEN`
-```bash
-# 获取token https://github.com/eclipse/openvsx/wiki/Publishing-Extensions#1-create-an-access-token
-
-# 准备名称空间
-npx ovsx create-namespace liangcheng-plugins -p d595e21f-e7c6-4513-bde7-9ea66ff16d36
-
-# 调用vsce 完成发布
-npx ovsx publish -p d595e21f-e7c6-4513-bde7-9ea66ff16d36
-```
-`secrets.VS_MARKETPLACE_TOKEN`
-```bash
-# 发布插件 https://code.visualstudio.com/api/working-with-extensions/publishing-extension#vsce
-
-# 获取token https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
-vsce login <publisher name>
-
-# 调用vsce 完成发布
-vsce publish
-```
-```bash
-env:
-  node_version: 14
-  email: 1062670898@qq.com
-```
-
-## License
-
-MIT
+之后将此目录`D:\文档\open-sourcetree-in-vscode-plugin`加载到系统环境变量中。
 
 
 
-refer to
+# 调用sourcetree
 
-https://github.com/mafintosh/templates
+vscode中的资源管理器
 
-https://github.com/mafintosh/create-project
+![image-20211223181309257](README/image-20211223181309257.png)
+
+现在将直接在sourcetree中打开此源码仓库
+
+![image-20211223181527352](README/image-20211223181527352.png)
