@@ -89,7 +89,7 @@
   },
   "homepage": "https://github.com/slcnx/open-sourcetree-in-vscode-plugin",
   "dependencies": {
-    "@types/vscode": "^1.32.0",
-    "open": "^8.4.0"
+    "open": "^8.4.0",
+    "vscode": "^1.1.37"
   }
 }
